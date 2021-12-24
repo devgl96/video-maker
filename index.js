@@ -1,13 +1,22 @@
-const readline = require('readline-sync')
+const readline = require('readline-sync');
+
+const robots = {
+  // userInput: require('./robots/user-input.js'),
+  text: require('./robots/text.js'),
+};
 
 // Função para agregar tudo
-function start () {
+async function start() {
   // Objeto para ter todos os elementos
   const content = {};
 
   // Criando elementos para inserir no content
   content.searchTerm = askAndReturnSearchTerm();
   content.prefix = askAndReturnPrefix();
+
+  // Inicializando os robots
+  // robots.userInput(content);
+  await robots.text(content);
 
   // Função para conseguir o assunto do vídeo
   function askAndReturnSearchTerm() {

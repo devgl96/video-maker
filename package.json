@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/devgl96/video-maker#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "algorithmia": "^0.3.10",
+    "puppeteer": "^13.0.1",
+    "readline-sync": "^1.4.10",
+    "sbd": "^1.0.19"
   }
 }
